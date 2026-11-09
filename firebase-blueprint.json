@@ -1,0 +1,226 @@
+{
+  "entities": {
+    "CloudUserProfile": {
+      "title": "CloudUserProfile",
+      "description": "Authenticated user profile and cloud sync metadata.",
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "description": "Firebase Auth UID of the user."
+        },
+        "displayName": {
+          "type": "string",
+          "description": "User display name from Google Sign-In."
+        },
+        "email": {
+          "type": "string",
+          "description": "User email address from Google Sign-In."
+        },
+        "photoUrl": {
+          "type": "string",
+          "description": "Avatar photo URL."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp via FieldValue.serverTimestamp()."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp via FieldValue.serverTimestamp()."
+        }
+      },
+      "required": [
+        "userId",
+        "displayName",
+        "email",
+        "photoUrl",
+        "createdAt",
+        "updatedAt"
+      ]
+    },
+    "CloudPdfRecord": {
+      "title": "CloudPdfRecord",
+      "description": "Cloud-synced PDF document metadata, reading progress, favorite flag, and folder assignment.",
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "description": "Owner Firebase Auth UID."
+        },
+        "uri": {
+          "type": "string",
+          "description": "Document URI string identifier."
+        },
+        "fileName": {
+          "type": "string",
+          "description": "PDF file display name."
+        },
+        "fileSizeBytes": {
+          "type": "integer",
+          "description": "File size in bytes."
+        },
+        "pageCount": {
+          "type": "integer",
+          "description": "Total pages in the PDF document."
+        },
+        "lastPage": {
+          "type": "integer",
+          "description": "0-based last read page index."
+        },
+        "isFavorite": {
+          "type": "boolean",
+          "description": "Whether the PDF is starred as a favorite."
+        },
+        "folderName": {
+          "type": "string",
+          "description": "Assigned custom folder name (empty string if unassigned)."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Creation server timestamp via FieldValue.serverTimestamp()."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Update server timestamp via FieldValue.serverTimestamp()."
+        }
+      },
+      "required": [
+        "userId",
+        "uri",
+        "fileName",
+        "fileSizeBytes",
+        "pageCount",
+        "lastPage",
+        "isFavorite",
+        "folderName",
+        "createdAt",
+        "updatedAt"
+      ]
+    },
+    "CloudBookmarkRecord": {
+      "title": "CloudBookmarkRecord",
+      "description": "Cloud-synced PDF page bookmark and annotation note.",
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "description": "Owner Firebase Auth UID."
+        },
+        "pdfUri": {
+          "type": "string",
+          "description": "URI of the bookmarked PDF document."
+        },
+        "fileName": {
+          "type": "string",
+          "description": "Display name of the bookmarked PDF document."
+        },
+        "pageNumber": {
+          "type": "integer",
+          "description": "0-based page index."
+        },
+        "note": {
+          "type": "string",
+          "description": "User note attached to the bookmark."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Creation server timestamp via FieldValue.serverTimestamp()."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Update server timestamp via FieldValue.serverTimestamp()."
+        }
+      },
+      "required": [
+        "userId",
+        "pdfUri",
+        "fileName",
+        "pageNumber",
+        "note",
+        "createdAt",
+        "updatedAt"
+      ]
+    },
+    "CloudAiSummaryRecord": {
+      "title": "CloudAiSummaryRecord",
+      "description": "Cloud-synced AI executive summary and key points for a PDF document.",
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "description": "Owner Firebase Auth UID."
+        },
+        "pdfUri": {
+          "type": "string",
+          "description": "URI of the summarized PDF document."
+        },
+        "fileName": {
+          "type": "string",
+          "description": "Display name of the summarized PDF."
+        },
+        "pageRangeDescription": {
+          "type": "string",
+          "description": "Summarized page range label."
+        },
+        "outputLanguage": {
+          "type": "string",
+          "description": "Output language code."
+        },
+        "shortSummary": {
+          "type": "string",
+          "description": "Executive summary text."
+        },
+        "keyPoints": {
+          "type": "array",
+          "description": "Bounded list of up to 10 key takeaway strings."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Creation server timestamp via FieldValue.serverTimestamp()."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Update server timestamp via FieldValue.serverTimestamp()."
+        }
+      },
+      "required": [
+        "userId",
+        "pdfUri",
+        "fileName",
+        "pageRangeDescription",
+        "outputLanguage",
+        "shortSummary",
+        "keyPoints",
+        "createdAt",
+        "updatedAt"
+      ]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "CloudUserProfile",
+      "description": "User profile document owned by userId."
+    },
+    "/users/{userId}/documents/{docId}": {
+      "schema": "CloudPdfRecord",
+      "description": "Per-user synced PDF document metadata and reading progress."
+    },
+    "/users/{userId}/bookmarks/{bookmarkId}": {
+      "schema": "CloudBookmarkRecord",
+      "description": "Per-user synced PDF page bookmarks and notes."
+    },
+    "/users/{userId}/summaries/{summaryId}": {
+      "schema": "CloudAiSummaryRecord",
+      "description": "Per-user synced AI executive summaries."
+    }
+  }
+}

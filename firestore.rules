@@ -1,0 +1,171 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Global default-deny safety net
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Hardened Global Primitives
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function existing() {
+      return resource.data;
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() >= 1 && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    // 1. Validation Blueprint: CloudUserProfile
+    function isValidCloudUserProfile(data) {
+      return data.userId is string && data.userId == request.auth.uid && data.userId.size() >= 1 && data.userId.size() <= 128 &&
+             data.displayName is string && data.displayName.size() >= 1 && data.displayName.size() <= 120 &&
+             data.email is string && data.email.size() <= 254 &&
+             data.photoUrl is string && data.photoUrl.size() <= 500 &&
+             data.createdAt is timestamp && data.createdAt <= request.time &&
+             data.updatedAt is timestamp && data.updatedAt <= request.time;
+    }
+
+    // 2. Validation Blueprint: CloudPdfRecord
+    function isValidCloudPdfRecord(data) {
+      return data.userId is string && data.userId == request.auth.uid && data.userId.size() >= 1 && data.userId.size() <= 128 &&
+             data.uri is string && data.uri.size() >= 1 && data.uri.size() <= 1000 &&
+             data.fileName is string && data.fileName.size() >= 1 && data.fileName.size() <= 300 &&
+             data.fileSizeBytes is int && data.fileSizeBytes >= 0 &&
+             data.pageCount is int && data.pageCount >= 0 &&
+             data.lastPage is int && data.lastPage >= 0 &&
+             data.isFavorite is bool &&
+             data.folderName is string && data.folderName.size() <= 120 &&
+             data.createdAt is timestamp && data.createdAt <= request.time &&
+             data.updatedAt is timestamp && data.updatedAt <= request.time;
+    }
+
+    // 3. Validation Blueprint: CloudBookmarkRecord
+    function isValidCloudBookmarkRecord(data) {
+      return data.userId is string && data.userId == request.auth.uid && data.userId.size() >= 1 && data.userId.size() <= 128 &&
+             data.pdfUri is string && data.pdfUri.size() >= 1 && data.pdfUri.size() <= 1000 &&
+             data.fileName is string && data.fileName.size() <= 300 &&
+             data.pageNumber is int && data.pageNumber >= 0 &&
+             data.note is string && data.note.size() <= 1000 &&
+             data.createdAt is timestamp && data.createdAt <= request.time &&
+             data.updatedAt is timestamp && data.updatedAt <= request.time;
+    }
+
+    // 4. Validation Blueprint: CloudAiSummaryRecord
+    function isValidCloudAiSummaryRecord(data) {
+      return data.userId is string && data.userId == request.auth.uid && data.userId.size() >= 1 && data.userId.size() <= 128 &&
+             data.pdfUri is string && data.pdfUri.size() >= 1 && data.pdfUri.size() <= 1000 &&
+             data.fileName is string && data.fileName.size() >= 1 && data.fileName.size() <= 300 &&
+             data.pageRangeDescription is string && data.pageRangeDescription.size() >= 1 && data.pageRangeDescription.size() <= 120 &&
+             data.outputLanguage is string && data.outputLanguage.size() >= 1 && data.outputLanguage.size() <= 40 &&
+             data.shortSummary is string && data.shortSummary.size() >= 1 && data.shortSummary.size() <= 5000 &&
+             data.keyPoints is list && data.keyPoints.size() <= 10 &&
+             (data.keyPoints.size() == 0 || (data.keyPoints[0] is string && data.keyPoints[0].size() <= 1000)) &&
+             data.createdAt is timestamp && data.createdAt <= request.time &&
+             data.updatedAt is timestamp && data.updatedAt <= request.time;
+    }
+
+    match /users/{userId} {
+      allow get: if isOwner(userId) && isValidId(userId);
+      allow list: if isOwner(userId) && existing().userId == request.auth.uid;
+
+      allow create: if isOwner(userId) &&
+                       isValidId(userId) &&
+                       incoming().keys().hasAll(['userId', 'displayName', 'email', 'photoUrl', 'createdAt', 'updatedAt']) &&
+                       incoming().keys().hasOnly(['userId', 'displayName', 'email', 'photoUrl', 'createdAt', 'updatedAt']) &&
+                       isValidCloudUserProfile(incoming());
+
+      allow update: if isOwner(userId) &&
+                       isValidId(userId) &&
+                       isValidCloudUserProfile(incoming()) &&
+                       incoming().userId == existing().userId &&
+                       incoming().createdAt == existing().createdAt &&
+                       incoming().diff(existing()).affectedKeys().hasOnly(['displayName', 'email', 'photoUrl', 'updatedAt']);
+
+      allow delete: if isOwner(userId) && isValidId(userId);
+
+      // Subcollection: Cloud-synced PDF documents & reading progress
+      match /documents/{docId} {
+        allow get: if isOwner(userId) && isValidId(userId) && isValidId(docId);
+        allow list: if isOwner(userId);
+
+        allow create: if isOwner(userId) &&
+                         isValidId(userId) &&
+                         isValidId(docId) &&
+                         incoming().keys().hasAll(['userId', 'uri', 'fileName', 'fileSizeBytes', 'pageCount', 'lastPage', 'isFavorite', 'folderName', 'createdAt', 'updatedAt']) &&
+                         incoming().keys().hasOnly(['userId', 'uri', 'fileName', 'fileSizeBytes', 'pageCount', 'lastPage', 'isFavorite', 'folderName', 'createdAt', 'updatedAt']) &&
+                         isValidCloudPdfRecord(incoming());
+
+        allow update: if isOwner(userId) &&
+                         isValidId(userId) &&
+                         isValidId(docId) &&
+                         isValidCloudPdfRecord(incoming()) &&
+                         incoming().userId == existing().userId &&
+                         incoming().uri == existing().uri &&
+                         incoming().createdAt == existing().createdAt &&
+                         incoming().diff(existing()).affectedKeys().hasOnly(['fileName', 'fileSizeBytes', 'pageCount', 'lastPage', 'isFavorite', 'folderName', 'updatedAt']);
+
+        allow delete: if isOwner(userId) && isValidId(userId) && isValidId(docId);
+      }
+
+      // Subcollection: Cloud-synced PDF bookmarks & notes
+      match /bookmarks/{bookmarkId} {
+        allow get: if isOwner(userId) && isValidId(userId) && isValidId(bookmarkId);
+        allow list: if isOwner(userId);
+
+        allow create: if isOwner(userId) &&
+                         isValidId(userId) &&
+                         isValidId(bookmarkId) &&
+                         incoming().keys().hasAll(['userId', 'pdfUri', 'fileName', 'pageNumber', 'note', 'createdAt', 'updatedAt']) &&
+                         incoming().keys().hasOnly(['userId', 'pdfUri', 'fileName', 'pageNumber', 'note', 'createdAt', 'updatedAt']) &&
+                         isValidCloudBookmarkRecord(incoming());
+
+        allow update: if isOwner(userId) &&
+                         isValidId(userId) &&
+                         isValidId(bookmarkId) &&
+                         isValidCloudBookmarkRecord(incoming()) &&
+                         incoming().userId == existing().userId &&
+                         incoming().pdfUri == existing().pdfUri &&
+                         incoming().createdAt == existing().createdAt &&
+                         incoming().diff(existing()).affectedKeys().hasOnly(['fileName', 'pageNumber', 'note', 'updatedAt']);
+
+        allow delete: if isOwner(userId) && isValidId(userId) && isValidId(bookmarkId);
+      }
+
+      // Subcollection: Cloud-synced AI executive summaries
+      match /summaries/{summaryId} {
+        allow get: if isOwner(userId) && isValidId(userId) && isValidId(summaryId);
+        allow list: if isOwner(userId);
+
+        allow create: if isOwner(userId) &&
+                         isValidId(userId) &&
+                         isValidId(summaryId) &&
+                         incoming().keys().hasAll(['userId', 'pdfUri', 'fileName', 'pageRangeDescription', 'outputLanguage', 'shortSummary', 'keyPoints', 'createdAt', 'updatedAt']) &&
+                         incoming().keys().hasOnly(['userId', 'pdfUri', 'fileName', 'pageRangeDescription', 'outputLanguage', 'shortSummary', 'keyPoints', 'createdAt', 'updatedAt']) &&
+                         isValidCloudAiSummaryRecord(incoming());
+
+        allow update: if isOwner(userId) &&
+                         isValidId(userId) &&
+                         isValidId(summaryId) &&
+                         isValidCloudAiSummaryRecord(incoming()) &&
+                         incoming().userId == existing().userId &&
+                         incoming().pdfUri == existing().pdfUri &&
+                         incoming().createdAt == existing().createdAt &&
+                         incoming().diff(existing()).affectedKeys().hasOnly(['fileName', 'pageRangeDescription', 'outputLanguage', 'shortSummary', 'keyPoints', 'updatedAt']);
+
+        allow delete: if isOwner(userId) && isValidId(userId) && isValidId(summaryId);
+      }
+    }
+  }
+}

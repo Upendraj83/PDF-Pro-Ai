@@ -1,0 +1,283 @@
+<resources>
+    <string name="app_name">PDF ALL IN ONE Pro+Ai</string>
+    <string name="app_brand_short">PDF ALL IN ONE</string>
+    <string name="app_badge_pro_ai">PRO+AI</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_files">Files</string>
+    <string name="nav_tools">Tools</string>
+    <string name="nav_scan">Scan</string>
+    <string name="nav_profile">Settings</string>
+
+    <!-- Onboarding (Max 3 screens, skippable, ending at file picker) -->
+    <string name="onboarding_skip">Skip</string>
+    <string name="onboarding_next">Next</string>
+    <string name="onboarding_back">Back</string>
+    <string name="onboarding_open_file_picker">Select a PDF to Start</string>
+    <string name="onboarding_set_default_reader">Set as Default PDF Reader</string>
+    <string name="onboarding_step_indicator">Step %1$d of %2$d</string>
+
+    <string name="onboarding_title_1">Read, Annotate &amp; Edit PDFs</string>
+    <string name="onboarding_desc_1" formatted="false">Enjoy smooth lazy-loaded reading, night mode, highlights, signatures, form filling, and permanent redaction—100% offline on your device.</string>
+
+    <string name="onboarding_title_2">Smart Camera Scan, OCR &amp; বাংলা</string>
+    <string name="onboarding_desc_2">Scan documents with automatic edge detection, build searchable PDFs with on-device OCR, and render crisp Bengali conjuncts (যুক্তাক্ষর) on Android 8.0+.</string>
+
+    <string name="onboarding_title_3">Privacy-First AI &amp; Default Reader</string>
+    <string name="onboarding_desc_3">Summarize, chat with page citations, or translate PDFs between English and Bengali only after your explicit consent. Pick a PDF now to begin!</string>
+
+    <!-- Default PDF Reader Guide Screen -->
+    <string name="default_reader_title">Make Default PDF Reader</string>
+    <string name="default_reader_subtitle">Open every PDF automatically in PDF ALL IN ONE Pro+Ai</string>
+    <string name="default_reader_step_1_title">1. Tap any PDF file</string>
+    <string name="default_reader_step_1_desc">In your File Manager, Downloads, WhatsApp, or Email app, tap any .pdf document to open it.</string>
+    <string name="default_reader_step_2_title">2. Choose PDF ALL IN ONE Pro+Ai</string>
+    <string name="default_reader_step_2_desc">When Android shows the \"Open with\" dialog, select PDF ALL IN ONE Pro+Ai from the app list.</string>
+    <string name="default_reader_step_3_title">3. Tap \"Always\"</string>
+    <string name="default_reader_step_3_desc">Tap \"Always\" so future PDFs open directly in this app. If another app is currently default, clear its \"Open by default\" setting in Android App Info.</string>
+    <string name="default_reader_open_system_settings">Open Android Default App Settings</string>
+    <string name="default_reader_test_with_picker">Pick a PDF File Now</string>
+    <string name="default_reader_close">Done</string>
+
+    <!-- Home Screen -->
+    <string name="hero_badge_fast_memory_safe">FAST &amp; MEMORY-SAFE</string>
+    <string name="hero_subtitle">Continuous lazy scroll, pinch zoom, night reading, and smart AI toolkit.</string>
+    <string name="home_open_pdf_button">Open PDF from Device</string>
+    <string name="home_quick_tools">Quick Tools</string>
+    <string name="home_favorites_section">Favorites</string>
+    <string name="home_folders_section">Folders</string>
+    <string name="home_recent_documents">Recent Documents</string>
+    <string name="home_favorite_documents">Favorite Documents</string>
+    <string name="home_filter_recent_count">Recent (%1$d)</string>
+    <string name="home_filter_starred_count">Favorites (%1$d)</string>
+    <string name="home_search_placeholder">Search recent files or folders…</string>
+    <string name="home_clear_search">Clear search</string>
+
+    <!-- Sorting & Folders -->
+    <string name="sort_label">Sort:</string>
+    <string name="sort_by_date">Date</string>
+    <string name="sort_by_name">Name</string>
+    <string name="sort_by_size">Size</string>
+    <string name="folder_all">All Files</string>
+    <string name="folder_unassigned">Uncategorized</string>
+    <string name="folder_create_new">New Folder</string>
+    <string name="folder_create_dialog_title">Create Folder</string>
+    <string name="folder_name_hint">Folder name (e.g. Work, Invoices)</string>
+    <string name="folder_assign_title">Move to Folder</string>
+    <string name="folder_remove_from_folder">Remove from Folder</string>
+    <string name="folder_delete">Delete Folder</string>
+
+    <!-- Quick Action Cards -->
+    <string name="quick_merge_title">Merge PDF</string>
+    <string name="quick_merge_subtitle">Combine files</string>
+    <string name="quick_merge_badge">AI Pro</string>
+    <string name="quick_compress_title">Compress</string>
+    <string name="quick_compress_subtitle">Reduce size</string>
+    <string name="quick_compress_badge" formatted="false">Up to 80%</string>
+    <string name="quick_sign_title">Sign &amp; Draw</string>
+    <string name="quick_sign_subtitle">Add signature</string>
+    <string name="quick_sign_badge">Fast e-Sign</string>
+    <string name="quick_scan_title">AI Scan</string>
+    <string name="quick_scan_subtitle">Camera to PDF</string>
+    <string name="quick_scan_badge">Smart OCR</string>
+
+    <!-- Empty States & Item Actions -->
+    <string name="empty_favorites_title">No favorite PDFs yet</string>
+    <string name="empty_favorites_desc">Star any PDF from your recent files to pin it to your Favorites section.</string>
+    <string name="empty_recents_title">No recent documents</string>
+    <string name="empty_recents_desc">Open any PDF document using the file picker above or from other apps. Your reading progress will be saved automatically.</string>
+    <string name="empty_select_pdf_btn">Select PDF File</string>
+    <string name="pdf_page_progress">Page %1$d of %2$d</string>
+    <string name="pdf_percent_read">%1$d%% read</string>
+    <string name="action_open">Open</string>
+    <string name="action_share">Share</string>
+    <string name="action_favorite">Add to Favorites</string>
+    <string name="action_unfavorite">Remove from Favorites</string>
+    <string name="action_move_to_folder">Move to Folder…</string>
+    <string name="action_remove_from_recents">Remove from Recents</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_save">Save</string>
+    <string name="action_close">Close</string>
+
+    <!-- Files Screen -->
+    <string name="files_title">Document Library</string>
+    <string name="files_search_placeholder">Search files by name or folder…</string>
+    <string name="files_filter_all">All (%1$d)</string>
+    <string name="files_filter_favorites">Favorites</string>
+    <string name="files_filter_large">&gt;10 MB</string>
+    <string name="files_clear_history_title">Clear Document History</string>
+    <string name="files_clear_history_msg">This will remove all recent entries from the library. Your original PDF files on the device will not be deleted.</string>
+    <string name="files_clear_all">Clear All</string>
+    <string name="files_no_match">No files match \"%1$s\"</string>
+    <string name="files_empty_category">No files in this category</string>
+
+    <!-- Tools Screen -->
+    <string name="tools_title">PDF Toolkit &amp; AI</string>
+    <string name="tools_subtitle">Background-safe PDF operations, forms, OCR &amp; Gemini AI</string>
+    <string name="tools_search_placeholder">Search tools (e.g. merge, sign, OCR, translate)…</string>
+
+    <!-- Scan Screen -->
+    <string name="scan_title">Document Scanner &amp; OCR</string>
+    <string name="scan_subtitle">Auto-edge detection, perspective correction &amp; searchable PDFs</string>
+
+    <!-- Settings / Profile Screen -->
+    <string name="settings_subtitle">Settings, Language, Performance &amp; Privacy</string>
+    <string name="settings_offline_badge" formatted="false">100% Offline-First • Apache 2.0 Engine</string>
+
+    <!-- Language Switcher -->
+    <string name="settings_language_title">App Language / ভাষা</string>
+    <string name="settings_language_subtitle">Switch between System default, English, and বাংলা (works on Android 8+)</string>
+    <string name="lang_system">System Default</string>
+    <string name="lang_english">English</string>
+    <string name="lang_bengali">বাংলা (Bengali)</string>
+
+    <!-- Theme & Reading Mode -->
+    <string name="settings_theme_title">App Theme</string>
+    <string name="theme_system">System</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="settings_reading_mode_title">Default Reading Mode</string>
+    <string name="reading_mode_continuous">Continuous Scroll</string>
+    <string name="reading_mode_continuous_desc">Smooth vertical scrolling (Default)</string>
+    <string name="reading_mode_single">Single Page (Swipe)</string>
+    <string name="reading_mode_single_desc">Horizontal swipe one page at a time</string>
+    <string name="reading_mode_spread">Two-Page Spread</string>
+    <string name="reading_mode_spread_desc">Side-by-side view for tablets &amp; landscape</string>
+
+    <!-- Low-Memory Mode -->
+    <string name="settings_performance_title">Performance &amp; Low-Memory Mode</string>
+    <string name="settings_low_memory_title">Low-Memory Mode</string>
+    <string name="settings_low_memory_desc">Use smaller page caches and lower render resolution to save RAM on low-memory devices</string>
+    <string name="settings_low_memory_status_auto">Device RAM class: %1$d MB • Low-RAM device detected: %2$s</string>
+    <string name="settings_yes">Yes</string>
+    <string name="settings_no">No</string>
+
+    <!-- Display & Guides -->
+    <string name="settings_display_title">Display &amp; Default Reader</string>
+    <string name="settings_keep_screen_on">Keep Screen On</string>
+    <string name="settings_keep_screen_on_desc">Prevent screen from timing out while reading documents</string>
+    <string name="settings_replay_onboarding">View Welcome Tour</string>
+    <string name="settings_default_pdf_guide">How to Set as Default PDF Reader</string>
+
+    <!-- Privacy & Analytics Opt-In -->
+    <string name="settings_privacy_analytics_title">Privacy &amp; Diagnostics</string>
+    <string name="settings_analytics_opt_in_title">Anonymous Usage Analytics (Opt-In)</string>
+    <string name="settings_analytics_opt_in_desc">Disabled by default. No analytics or usage events are collected unless you explicitly opt in.</string>
+    <string name="settings_test_error_screen">Open Global Error Diagnostic Screen</string>
+
+    <!-- Global Error Screen -->
+    <string name="error_screen_title">Something Went Wrong</string>
+    <string name="error_screen_subtitle">An unexpected error occurred. Your PDF files on the device are safe. You can copy the technical details below to report or troubleshoot the issue.</string>
+    <string name="error_copy_details">Copy details</string>
+    <string name="error_copied_toast">Error details copied to clipboard</string>
+    <string name="error_dismiss_continue">Dismiss &amp; Continue</string>
+    <string name="error_technical_details_label">Technical Diagnostic Details</string>
+
+    <!-- About Screen -->
+    <string name="about_title">About &amp; Open Source Licenses</string>
+    <string name="about_open_button">About App, Version &amp; Licenses</string>
+    <string name="about_version_format">Version %1$s (Build %2$d) • Min SDK 26 (Android 8.0+)</string>
+    <string name="about_privacy_policy_title">Privacy Policy</string>
+    <string name="about_privacy_policy_subtitle">Offline-first architecture, zero analytics by default, explicit Cloud AI consent</string>
+    <string name="about_privacy_policy_placeholder_url">https://pdfallinone.app/privacy-policy</string>
+    <string name="about_licenses_header">Open Source Libraries &amp; Licenses (%1$d)</string>
+    <string name="about_licenses_subtitle">Every library and font bundled in this application and its license:</string>
+
+    <!-- Accessibility Content Descriptions -->
+    <string name="cd_app_logo">PDF ALL IN ONE Pro+Ai icon</string>
+    <string name="cd_search_icon">Search documents</string>
+    <string name="cd_clear_search">Clear search text</string>
+    <string name="cd_sort_files">Sort files</string>
+    <string name="cd_clear_history">Clear recent files history</string>
+    <string name="cd_open_pdf_fab">Open PDF document from storage</string>
+    <string name="cd_favorite_add">Add %1$s to favorites</string>
+    <string name="cd_favorite_remove">Remove %1$s from favorites</string>
+    <string name="cd_more_options">More options for %1$s</string>
+    <string name="cd_navigate_back">Navigate back</string>
+
+    <!-- Watermark & Print Actions -->
+    <string name="action_watermark_pdf">Watermark &amp; Numbers</string>
+    <string name="action_print_pdf">Print PDF</string>
+    <string name="print_pdf_title">Print PDF Document</string>
+    <string name="quick_watermark_title">Watermark</string>
+    <string name="quick_watermark_subtitle">Text, logo &amp; page numbers</string>
+    <string name="quick_watermark_badge">Stamp</string>
+    <string name="quick_print_title">Print PDF</string>
+    <string name="quick_print_subtitle">System print &amp; page range</string>
+    <string name="quick_print_badge">Print</string>
+
+    <!-- Video-Inspired Home & Navigation UI -->
+    <string name="home_welcome_back">Welcome back</string>
+    <string name="home_what_would_you_like">What would you like to do?</string>
+    <string name="home_tab_recent">Recent</string>
+    <string name="home_tab_starred">Starred</string>
+    <string name="home_tab_on_device">On device</string>
+    <string name="home_tip_edit_title">Easily edit PDFs</string>
+    <string name="home_tip_edit_desc">Fix typos and add text, Bengali fonts, or images to your PDFs.</string>
+    <string name="home_tip_merge_title">Merge files into one PDF</string>
+    <string name="home_tip_merge_desc">Combine multiple PDF files and images into a single document.</string>
+    <string name="home_tip_ai_title">Generative AI Summary</string>
+    <string name="home_tip_ai_desc">Get instant summaries, translations, and answers for all your files.</string>
+    <string name="home_tip_crop_title">Crop &amp; Rotate Pages</string>
+    <string name="home_tip_crop_desc">Trim page margins with a custom bounding box or rotate individual pages.</string>
+    <string name="home_inline_storage_title">Quickly organize your local files</string>
+    <string name="home_inline_storage_desc">Group PDFs into custom folders or set this app as your default PDF reader.</string>
+    <string name="home_no_starred_title">No starred files</string>
+    <string name="home_no_starred_desc">Star a file to easily find it here later</string>
+    <string name="home_on_device_title">Browse PDFs on your device</string>
+    <string name="home_on_device_desc">Access downloaded PDFs, scanned documents, and edited files stored on this device.</string>
+    <string name="home_browse_device_btn">Browse device files</string>
+    <string name="fab_quick_actions_title">Create &amp; Open</string>
+    <string name="fab_open_file">Open file</string>
+    <string name="fab_scan_doc">Scan document</string>
+    <string name="fab_ai_assistant">Ask AI Assistant</string>
+    <string name="fab_ai_summary">Generative summary</string>
+    <string name="fab_edit_pdf">Edit PDF</string>
+    <string name="fab_create_pdf">Create PDF from images</string>
+    <string name="fab_combine_files">Combine files</string>
+    <string name="fab_crop_pages">Crop pages</string>
+    <string name="badge_new">New</string>
+    <string name="files_section_locations">File Locations</string>
+    <string name="files_loc_on_device">On this device</string>
+    <string name="files_loc_starred">Starred files</string>
+    <string name="files_loc_scans">Scans &amp; OCR exports</string>
+    <string name="files_loc_large">Large files (&gt; 10 MB)</string>
+    <string name="files_loc_browse_system">Browse system storage</string>
+    <string name="tools_cat_all">All</string>
+    <string name="tools_cat_read">Read</string>
+    <string name="tools_cat_create">Create</string>
+    <string name="tools_cat_edit">Edit</string>
+    <string name="tools_cat_convert">Convert</string>
+    <string name="tools_cat_ai">AI tools</string>
+
+    <!-- Permissions: Internal Documents, Media, Microphone & Cloud Drives -->
+    <string name="perm_cloud_section_title">Device Permissions, Microphone &amp; Cloud Drives</string>
+    <string name="perm_internal_docs_title">Internal Documents &amp; Folder Access</string>
+    <string name="perm_internal_docs_desc">Grant persistent access to internal folders to automatically import and manage PDFs</string>
+    <string name="perm_grant_folder_btn">Grant Folder Access</string>
+    <string name="perm_pick_media_title">Media &amp; Photos Access</string>
+    <string name="perm_pick_media_desc">Select images and media files from device gallery to convert into PDF</string>
+    <string name="perm_pick_media_btn">Select Media / Photos</string>
+    <string name="perm_microphone_title">Microphone &amp; Voice Dictation</string>
+    <string name="perm_microphone_desc">Used for voice search and speaking questions to the AI Assistant</string>
+    <string name="perm_microphone_granted">Granted • Ready for Voice Input</string>
+    <string name="perm_microphone_not_granted">Tap to allow Microphone access</string>
+    <string name="perm_microphone_allow_btn">Allow Microphone</string>
+    <string name="perm_voice_search_cd">Voice search with microphone</string>
+    <string name="perm_voice_prompt">Speak now (English or বাংলা)…</string>
+    <string name="cloud_share_title">Share &amp; Save to Cloud Drives</string>
+    <string name="cloud_share_subtitle">Upload or share \"%1$s\" to Google Drive, OneDrive, Dropbox, or other apps</string>
+    <string name="cloud_google_drive">Save / Share to Google Drive</string>
+    <string name="cloud_google_drive_desc">Upload directly to your Google Drive account</string>
+    <string name="cloud_onedrive">Microsoft OneDrive</string>
+    <string name="cloud_onedrive_desc">Share to OneDrive cloud storage</string>
+    <string name="cloud_dropbox">Dropbox</string>
+    <string name="cloud_dropbox_desc">Send to Dropbox cloud folder</string>
+    <string name="cloud_saf_save">Save to Cloud / Internal Folder (SAF)</string>
+    <string name="cloud_saf_save_desc">Choose Google Drive, OneDrive, or any device folder in system picker</string>
+    <string name="cloud_other_apps">Share via Other Apps</string>
+    <string name="cloud_other_apps_desc">Email, WhatsApp, Telegram, Bluetooth, or nearby share</string>
+    <string name="files_loc_cloud_import">Open from Google Drive &amp; Cloud</string>
+    <string name="files_loc_grant_folder">Grant internal folder access</string>
+</resources>

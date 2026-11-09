@@ -1,0 +1,283 @@
+<resources>
+    <string name="app_name">PDF ALL IN ONE Pro+Ai</string>
+    <string name="app_brand_short">পিডিএফ অল ইন ওয়ান</string>
+    <string name="app_badge_pro_ai">প্রো+এআই</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_home">হোম</string>
+    <string name="nav_files">ফাইলসমূহ</string>
+    <string name="nav_tools">টুলস</string>
+    <string name="nav_scan">স্ক্যান</string>
+    <string name="nav_profile">সেটিংস</string>
+
+    <!-- Onboarding (Max 3 screens, skippable, ending at file picker) -->
+    <string name="onboarding_skip">এড়িয়ে যান</string>
+    <string name="onboarding_next">পরবর্তী</string>
+    <string name="onboarding_back">পেছনে</string>
+    <string name="onboarding_open_file_picker">শুরু করতে একটি পিডিএফ নির্বাচন করুন</string>
+    <string name="onboarding_set_default_reader">ডিফল্ট পিডিএফ রিডার হিসেবে সেট করুন</string>
+    <string name="onboarding_step_indicator">ধাপ %1$d / %2$d</string>
+
+    <string name="onboarding_title_1">পিডিএফ পড়ুন, টীকা দিন ও সম্পাদনা করুন</string>
+    <string name="onboarding_desc_1" formatted="false">দ্রুত লেজি-লোডেড রিডিং, নাইট মোড, হাইলাইট, স্বাক্ষর, ফর্ম পূরণ এবং স্থায়ী রিডাকশন উপভোগ করুন—সম্পূর্ণ অফলাইনে আপনার ডিভাইসে।</string>
+
+    <string name="onboarding_title_2">স্মার্ট ক্যামেরা স্ক্যান, ওসিআর ও বাংলা</string>
+    <string name="onboarding_desc_2">স্বয়ংক্রিয় এজ ডিটেকশনসহ ডকুমেন্ট স্ক্যান করুন, অন-ডিভাইস ওসিআর দিয়ে সার্চযোগ্য পিডিএফ তৈরি করুন এবং অ্যান্ড্রয়েড ৮.০+ এ স্পষ্ট বাংলা যুক্তাক্ষর দেখুন।</string>
+
+    <string name="onboarding_title_3">গোপনীয়তা-সুরক্ষিত এআই ও ডিফল্ট রিডার</string>
+    <string name="onboarding_desc_3">কেবল আপনার স্পষ্ট সম্মতির পরেই সারসংক্ষেপ, পৃষ্ঠা রেফারেন্সসহ চ্যাট কিংবা ইংরেজি-বাংলা অনুবাদ করুন। এখনই একটি পিডিএফ ফাইল বেছে নিন!</string>
+
+    <!-- Default PDF Reader Guide Screen -->
+    <string name="default_reader_title">ডিফল্ট পিডিএফ রিডার করুন</string>
+    <string name="default_reader_subtitle">প্রতিটি পিডিএফ ফাইল স্বয়ংক্রিয়ভাবে PDF ALL IN ONE Pro+Ai-এ খুলুন</string>
+    <string name="default_reader_step_1_title">১. যেকোনো পিডিএফ ফাইলে ট্যাপ করুন</string>
+    <string name="default_reader_step_1_desc">আপনার ফাইল ম্যানেজার, ডাউনলোডস, হোয়াটসঅ্যাপ বা ইমেইল অ্যাপে যেকোনো .pdf ফাইলে ট্যাপ করুন।</string>
+    <string name="default_reader_step_2_title">২. PDF ALL IN ONE Pro+Ai বেছে নিন</string>
+    <string name="default_reader_step_2_desc">অ্যান্ড্রয়েড যখন \"Open with\" তালিকা দেখাবে, তখন অ্যাপ তালিকা থেকে PDF ALL IN ONE Pro+Ai নির্বাচন করুন।</string>
+    <string name="default_reader_step_3_title">৩. \"Always\" (সবসময়) ট্যাপ করুন</string>
+    <string name="default_reader_step_3_desc">\"Always\"-এ ট্যাপ করুন যাতে ভবিষ্যতে সব পিডিএফ সরাসরি এই অ্যাপে খোলে। অন্য কোনো অ্যাপ ডিফল্ট করা থাকলে সিস্টেম সেটিংস থেকে সেটি পরিবর্তন করুন।</string>
+    <string name="default_reader_open_system_settings">অ্যান্ড্রয়েড ডিফল্ট অ্যাপ সেটিংস খুলুন</string>
+    <string name="default_reader_test_with_picker">এখনই একটি পিডিএফ ফাইল খুলুন</string>
+    <string name="default_reader_close">সম্পন্ন</string>
+
+    <!-- Home Screen -->
+    <string name="hero_badge_fast_memory_safe">দ্রুত ও মেমরি-সাশ্রয়ী</string>
+    <string name="hero_subtitle">নিরবচ্ছিন্ন স্ক্রলিং, পিঞ্চ জুম, নাইট রিডিং এবং স্মার্ট এআই টুলকিট।</string>
+    <string name="home_open_pdf_button">ডিভাইস থেকে পিডিএফ খুলুন</string>
+    <string name="home_quick_tools">কুইক টুলস</string>
+    <string name="home_favorites_section">প্রিয় তালিকা (Favorites)</string>
+    <string name="home_folders_section">ফোল্ডারসমূহ</string>
+    <string name="home_recent_documents">সাম্প্রতিক ডকুমেন্টসমূহ</string>
+    <string name="home_favorite_documents">প্রিয় ডকুমেন্টসমূহ</string>
+    <string name="home_filter_recent_count">সাম্প্রতিক (%1$d)</string>
+    <string name="home_filter_starred_count">প্রিয় (%1$d)</string>
+    <string name="home_search_placeholder">সাম্প্রতিক ফাইল বা ফোল্ডার খুঁজুন…</string>
+    <string name="home_clear_search">অনুসন্ধান মুছুন</string>
+
+    <!-- Sorting & Folders -->
+    <string name="sort_label">সাজান:</string>
+    <string name="sort_by_date">তারিখ</string>
+    <string name="sort_by_name">নাম</string>
+    <string name="sort_by_size">আকার</string>
+    <string name="folder_all">সব ফাইল</string>
+    <string name="folder_unassigned">ফোল্ডারবিহীন</string>
+    <string name="folder_create_new">নতুন ফোল্ডার</string>
+    <string name="folder_create_dialog_title">নতুন ফোল্ডার তৈরি করুন</string>
+    <string name="folder_name_hint">ফোল্ডারের নাম (যেমন: অফিস, হিসাব)</string>
+    <string name="folder_assign_title">ফোল্ডারে রাখুন</string>
+    <string name="folder_remove_from_folder">ফোল্ডার থেকে সরান</string>
+    <string name="folder_delete">ফোল্ডার মুছুন</string>
+
+    <!-- Quick Action Cards -->
+    <string name="quick_merge_title">পিডিএফ মার্জ</string>
+    <string name="quick_merge_subtitle">একাধিক ফাইল যুক্ত করুন</string>
+    <string name="quick_merge_badge">প্রো টুল</string>
+    <string name="quick_compress_title">কম্প্রেস</string>
+    <string name="quick_compress_subtitle">ফাইলের আকার কমান</string>
+    <string name="quick_compress_badge" formatted="false">৮০% পর্যন্ত</string>
+    <string name="quick_sign_title">স্বাক্ষর ও ড্র</string>
+    <string name="quick_sign_subtitle">ই-স্বাক্ষর যোগ করুন</string>
+    <string name="quick_sign_badge">দ্রুত সাইন</string>
+    <string name="quick_scan_title">এআই স্ক্যান</string>
+    <string name="quick_scan_subtitle">ক্যামেরা থেকে পিডিএফ</string>
+    <string name="quick_scan_badge">স্মার্ট ওসিআর</string>
+
+    <!-- Empty States & Item Actions -->
+    <string name="empty_favorites_title">এখনও কোনো প্রিয় পিডিএফ নেই</string>
+    <string name="empty_favorites_desc">যেকোনো পিডিএফ ফাইলের পাশে তারকা (Star) আইকনে ট্যাপ করে প্রিয় তালিকায় যোগ করুন।</string>
+    <string name="empty_recents_title">কোনো সাম্প্রতিক ডকুমেন্ট নেই</string>
+    <string name="empty_recents_desc">উপরের বোতাম ব্যবহার করে যেকোনো পিডিএফ ডকুমেন্ট খুলুন। আপনার পড়ার অগ্রগতি স্বয়ংক্রিয়ভাবে সংরক্ষিত হবে।</string>
+    <string name="empty_select_pdf_btn">পিডিএফ ফাইল নির্বাচন করুন</string>
+    <string name="pdf_page_progress">পৃষ্ঠা %1$d / %2$d</string>
+    <string name="pdf_percent_read">%1$d%% পড়া হয়েছে</string>
+    <string name="action_open">খুলুন</string>
+    <string name="action_share">শেয়ার করুন</string>
+    <string name="action_favorite">প্রিয় তালিকায় যোগ করুন</string>
+    <string name="action_unfavorite">প্রিয় তালিকা থেকে সরান</string>
+    <string name="action_move_to_folder">ফোল্ডারে নিন…</string>
+    <string name="action_remove_from_recents">তালিকা থেকে সরান</string>
+    <string name="action_cancel">বাতিল</string>
+    <string name="action_save">সংরক্ষণ</string>
+    <string name="action_close">বন্ধ করুন</string>
+
+    <!-- Files Screen -->
+    <string name="files_title">ডকুমেন্ট লাইব্রেরি</string>
+    <string name="files_search_placeholder">নাম বা ফোল্ডার দিয়ে ফাইল খুঁজুন…</string>
+    <string name="files_filter_all">সব (%1$d)</string>
+    <string name="files_filter_favorites">প্রিয়</string>
+    <string name="files_filter_large">&gt;১০ মেগাবাইট</string>
+    <string name="files_clear_history_title">সাম্প্রতিক তালিকা মুছুন</string>
+    <string name="files_clear_history_msg">এটি কেবল সাম্প্রতিক তালিকা পরিষ্কার করবে। আপনার ডিভাইসের মূল পিডিএফ ফাইলগুলো মুছে যাবে না।</string>
+    <string name="files_clear_all">সব মুছুন</string>
+    <string name="files_no_match">\"%1$s\"-এর সাথে কোনো ফাইল মেলেনি</string>
+    <string name="files_empty_category">এই বিভাগে কোনো ফাইল নেই</string>
+
+    <!-- Tools Screen -->
+    <string name="tools_title">পিডিএফ টুলকিট ও এআই</string>
+    <string name="tools_subtitle">ব্যাকগ্রাউন্ড পিডিএফ অপারেশন, ফর্ম, ওসিআর এবং জেমিনি এআই</string>
+    <string name="tools_search_placeholder">টুল খুঁজুন (যেমন: মার্জ, স্বাক্ষর, ওসিআর, অনুবাদ)…</string>
+
+    <!-- Scan Screen -->
+    <string name="scan_title">ডকুমেন্ট স্ক্যানার ও ওসিআর</string>
+    <string name="scan_subtitle">অটো-এজ ডিটেকশন, পার্সপেক্টিভ সংশোধন এবং সার্চযোগ্য পিডিএফ</string>
+
+    <!-- Settings / Profile Screen -->
+    <string name="settings_subtitle">সেটিংস, ভাষা, পারফরম্যান্স ও গোপনীয়তা</string>
+    <string name="settings_offline_badge" formatted="false">১০০% অফলাইন-ফার্স্ট • অ্যাপাচি ২.০ ইঞ্জিন</string>
+
+    <!-- Language Switcher -->
+    <string name="settings_language_title">অ্যাপের ভাষা / Language</string>
+    <string name="settings_language_subtitle">সিস্টেম ডিফল্ট, ইংরেজি এবং বাংলা ভাষার মধ্যে পরিবর্তন করুন (অ্যান্ড্রয়েড ৮+ সমর্থিত)</string>
+    <string name="lang_system">সিস্টেম ডিফল্ট</string>
+    <string name="lang_english">English (ইংরেজি)</string>
+    <string name="lang_bengali">বাংলা</string>
+
+    <!-- Theme & Reading Mode -->
+    <string name="settings_theme_title">অ্যাপ থিম</string>
+    <string name="theme_system">সিস্টেম</string>
+    <string name="theme_light">লাইট</string>
+    <string name="theme_dark">ডার্ক</string>
+    <string name="settings_reading_mode_title">ডিফল্ট রিডিং মোড</string>
+    <string name="reading_mode_continuous">নিরবচ্ছিন্ন স্ক্রল (Continuous)</string>
+    <string name="reading_mode_continuous_desc">মসৃণ উল্লম্ব স্ক্রলিং (ডিফল্ট)</string>
+    <string name="reading_mode_single">একক পৃষ্ঠা (সোয়াইপ)</string>
+    <string name="reading_mode_single_desc">একবারে একটি করে পৃষ্ঠা সোয়াইপ করুন</string>
+    <string name="reading_mode_spread">দুই-পৃষ্ঠা স্প্রেড</string>
+    <string name="reading_mode_spread_desc">ট্যাবলেট ও ল্যান্ডস্কেপের জন্য পাশাপাশি দৃশ্য</string>
+
+    <!-- Low-Memory Mode -->
+    <string name="settings_performance_title">পারফরম্যান্স ও লো-মেমরি মোড</string>
+    <string name="settings_low_memory_title">লো-মেমরি মোড (Low-Memory Mode)</string>
+    <string name="settings_low_memory_desc">কম র‍্যামের ডিভাইসে মেমরি বাঁচাতে ছোট ক্যাশে এবং কম রেন্ডার রেজোলিউশন ব্যবহার করুন</string>
+    <string name="settings_low_memory_status_auto">ডিভাইস র‍্যাম ক্লাস: %1$d MB • লো-র‍্যাম ডিভাইস শনাক্ত: %2$s</string>
+    <string name="settings_yes">হ্যাঁ</string>
+    <string name="settings_no">না</string>
+
+    <!-- Display & Guides -->
+    <string name="settings_display_title">ডিসপ্লে ও ডিফল্ট রিডার</string>
+    <string name="settings_keep_screen_on">স্ক্রিন চালু রাখুন</string>
+    <string name="settings_keep_screen_on_desc">ডকুমেন্ট পড়ার সময় স্ক্রিন বন্ধ হওয়া রোধ করুন</string>
+    <string name="settings_replay_onboarding">ওয়েলকাম গাইড দেখুন</string>
+    <string name="settings_default_pdf_guide">ডিফল্ট পিডিএফ রিডার করার নিয়ম</string>
+
+    <!-- Privacy & Analytics Opt-In -->
+    <string name="settings_privacy_analytics_title">গোপনীয়তা ও ডায়াগনস্টিকস</string>
+    <string name="settings_analytics_opt_in_title">ব্যবহারের অ্যানালিটিক্স (ঐচ্ছিক অপ্ট-ইন)</string>
+    <string name="settings_analytics_opt_in_desc">ডিফল্টভাবে বন্ধ। আপনি নিজে চালু না করা পর্যন্ত কোনো অ্যানালিটিক্স তথ্য সংগ্রহ করা হয় না।</string>
+    <string name="settings_test_error_screen">গ্লোবাল এরর ডায়াগনস্টিক স্ক্রিন দেখুন</string>
+
+    <!-- Global Error Screen -->
+    <string name="error_screen_title">একটি অপ্রত্যাশিত ত্রুটি ঘটেছে</string>
+    <string name="error_screen_subtitle">একটি ত্রুটি দেখা দিয়েছে, তবে আপনার ডিভাইসের সব পিডিএফ ফাইল সম্পূর্ণ নিরাপদ। সমস্যাটি জানাতে নিচের কারিগরি বিবরণ কপি করতে পারেন।</string>
+    <string name="error_copy_details">বিবরণ কপি করুন (Copy details)</string>
+    <string name="error_copied_toast">ত্রুটির বিবরণ ক্লিপবোর্ডে কপি করা হয়েছে</string>
+    <string name="error_dismiss_continue">বন্ধ করুন ও চালিয়ে যান</string>
+    <string name="error_technical_details_label">কারিগরি ডায়াগনস্টিক বিবরণ</string>
+
+    <!-- About Screen -->
+    <string name="about_title">অ্যাপ পরিচিতি ও ওপেন সোর্স লাইসেন্স</string>
+    <string name="about_open_button">অ্যাপ পরিচিতি, সংস্করণ ও লাইসেন্স তালিকা</string>
+    <string name="about_version_format">সংস্করণ %1$s (বিল্ড %2$d) • সর্বনিম্ন SDK 26 (Android 8.0+)</string>
+    <string name="about_privacy_policy_title">গোপনীয়তা নীতি (Privacy Policy)</string>
+    <string name="about_privacy_policy_subtitle">অফলাইন-ফার্স্ট আর্কিটেকচার, ডিফল্টভাবে শূন্য অ্যানালিটিক্স এবং স্পষ্ট ক্লাউড এআই সম্মতি</string>
+    <string name="about_privacy_policy_placeholder_url">https://pdfallinone.app/privacy-policy</string>
+    <string name="about_licenses_header">ব্যবহৃত লাইব্রেরি ও ওপেন সোর্স লাইসেন্স (%1$d)</string>
+    <string name="about_licenses_subtitle">এই অ্যাপে ব্যবহৃত প্রতিটি লাইব্রেরি এবং ফন্টের লাইসেন্সের তালিকা:</string>
+
+    <!-- Accessibility Content Descriptions -->
+    <string name="cd_app_logo">পিডিএফ অল ইন ওয়ান প্রো+এআই আইকন</string>
+    <string name="cd_search_icon">ডকুমেন্ট খুঁজুন</string>
+    <string name="cd_clear_search">অনুসন্ধান লেখা মুছুন</string>
+    <string name="cd_sort_files">ফাইল সাজান</string>
+    <string name="cd_clear_history">সাম্প্রতিক তালিকা মুছুন</string>
+    <string name="cd_open_pdf_fab">স্টোরেজ থেকে পিডিএফ খুলুন</string>
+    <string name="cd_favorite_add">%1$s প্রিয় তালিকায় যোগ করুন</string>
+    <string name="cd_favorite_remove">%1$s প্রিয় তালিকা থেকে সরান</string>
+    <string name="cd_more_options">%1$s-এর আরও অপশন</string>
+    <string name="cd_navigate_back">পেছনে যান</string>
+
+    <!-- Watermark & Print Actions -->
+    <string name="action_watermark_pdf">ওয়াটারমার্ক ও পৃষ্ঠা নম্বর</string>
+    <string name="action_print_pdf">পিডিএফ প্রিন্ট করুন</string>
+    <string name="print_pdf_title">পিডিএফ ডকুমেন্ট প্রিন্ট করুন</string>
+    <string name="quick_watermark_title">ওয়াটারমার্ক</string>
+    <string name="quick_watermark_subtitle">টেক্সট, লোগো ও পৃষ্ঠা নম্বর</string>
+    <string name="quick_watermark_badge">স্ট্যাম্প</string>
+    <string name="quick_print_title">পিডিএফ প্রিন্ট</string>
+    <string name="quick_print_subtitle">সিস্টেম প্রিন্ট ও পৃষ্ঠা পরিসীমা</string>
+    <string name="quick_print_badge">প্রিন্ট</string>
+
+    <!-- Video-Inspired Home & Navigation UI -->
+    <string name="home_welcome_back">স্বাগতম</string>
+    <string name="home_what_would_you_like">আপনি কী করতে চান?</string>
+    <string name="home_tab_recent">সাম্প্রতিক</string>
+    <string name="home_tab_starred">তারকাচিহ্নিত</string>
+    <string name="home_tab_on_device">ডিভাইসে</string>
+    <string name="home_tip_edit_title">সহজেই পিডিএফ সম্পাদনা করুন</string>
+    <string name="home_tip_edit_desc">পিডিএফ ফাইলে ভুল সংশোধন করুন এবং নতুন বাংলা/ইংরেজি লেখা বা ছবি যোগ করুন।</string>
+    <string name="home_tip_merge_title">একাধিক ফাইল এক পিডিএফে যুক্ত করুন</string>
+    <string name="home_tip_merge_desc">একাধিক পিডিএফ এবং ছবি একত্রিত করে একটি ফাইলে রূপান্তর করুন।</string>
+    <string name="home_tip_ai_title">জেনারেটিভ এআই সারাংশ</string>
+    <string name="home_tip_ai_desc">আপনার সব ফাইলের জন্য তাৎক্ষণিক সারাংশ, অনুবাদ এবং প্রশ্নের উত্তর পান।</string>
+    <string name="home_tip_crop_title">পৃষ্ঠা ক্রপ ও রোটেট করুন</string>
+    <string name="home_tip_crop_desc">কাস্টম বক্স দিয়ে পৃষ্ঠার মার্জিন কাটুন অথবা নির্দিষ্ট পৃষ্ঠা ঘোরান।</string>
+    <string name="home_inline_storage_title">আপনার লোকাল ফাইলগুলো সহজেই সাজান</string>
+    <string name="home_inline_storage_desc">কাস্টম ফোল্ডারে পিডিএফ রাখুন অথবা অ্যাপটিকে ডিফল্ট পিডিএফ রিডার হিসেবে সেট করুন।</string>
+    <string name="home_no_starred_title">কোনো তারকাচিহ্নিত ফাইল নেই</string>
+    <string name="home_no_starred_desc">পরে সহজে খুঁজে পেতে যেকোনো ফাইলে তারকা চিহ্ন দিন</string>
+    <string name="home_on_device_title">ডিভাইসের পিডিএফ ফাইল ব্রাউজ করুন</string>
+    <string name="home_on_device_desc">আপনার ডিভাইসে সংরক্ষিত ডাউনলোড করা, স্ক্যান করা এবং সম্পাদিত সব পিডিএফ দেখুন।</string>
+    <string name="home_browse_device_btn">ডিভাইসের ফাইল ব্রাউজ করুন</string>
+    <string name="fab_quick_actions_title">তৈরি করুন ও খুলুন</string>
+    <string name="fab_open_file">ফাইল খুলুন</string>
+    <string name="fab_scan_doc">ডকুমেন্ট স্ক্যান করুন</string>
+    <string name="fab_ai_assistant">এআই অ্যাসিস্ট্যান্টকে জিজ্ঞাসা করুন</string>
+    <string name="fab_ai_summary">জেনারেটিভ সারাংশ</string>
+    <string name="fab_edit_pdf">পিডিএফ সম্পাদনা করুন</string>
+    <string name="fab_create_pdf">ছবি থেকে পিডিএফ তৈরি করুন</string>
+    <string name="fab_combine_files">ফাইল একত্রিত করুন</string>
+    <string name="fab_crop_pages">পৃষ্ঠা ক্রপ করুন</string>
+    <string name="badge_new">নতুন</string>
+    <string name="files_section_locations">ফাইলের অবস্থান</string>
+    <string name="files_loc_on_device">এই ডিভাইসে</string>
+    <string name="files_loc_starred">তারকাচিহ্নিত ফাইল</string>
+    <string name="files_loc_scans">স্ক্যান ও ওসিআর ফাইল</string>
+    <string name="files_loc_large">বড় ফাইল (&gt; ১০ মেগাবাইট)</string>
+    <string name="files_loc_browse_system">সিস্টেম স্টোরেজ ব্রাউজ করুন</string>
+    <string name="tools_cat_all">সব</string>
+    <string name="tools_cat_read">পড়ুন</string>
+    <string name="tools_cat_create">তৈরি</string>
+    <string name="tools_cat_edit">সম্পাদনা</string>
+    <string name="tools_cat_convert">রূপান্তর</string>
+    <string name="tools_cat_ai">এআই টুলস</string>
+
+    <!-- Permissions: Internal Documents, Media, Microphone & Cloud Drives -->
+    <string name="perm_cloud_section_title">ডিভাইস অনুমতি, মাইক্রোফোন ও ক্লাউড ড্রাইভ</string>
+    <string name="perm_internal_docs_title">ইন্টারনাল ডকুমেন্ট ও ফোল্ডার অনুমতি</string>
+    <string name="perm_internal_docs_desc">পিডিএফ ফাইল স্বয়ংক্রিয়ভাবে ইমপোর্ট ও পরিচালনা করতে ইন্টারনাল ফোল্ডারের অনুমতি দিন</string>
+    <string name="perm_grant_folder_btn">ফোল্ডার অনুমতি দিন</string>
+    <string name="perm_pick_media_title">মিডিয়া ও ছবি অ্যাক্সেস</string>
+    <string name="perm_pick_media_desc">গ্যালারি থেকে ছবি ও মিডিয়া ফাইল নির্বাচন করে পিডিএফে রূপান্তর করুন</string>
+    <string name="perm_pick_media_btn">মিডিয়া / ছবি নির্বাচন করুন</string>
+    <string name="perm_microphone_title">মাইক্রোফোন ও ভয়েস ইনপুট</string>
+    <string name="perm_microphone_desc">ভয়েস সার্চ এবং এআই অ্যাসিস্ট্যান্টকে মুখে প্রশ্ন করার জন্য ব্যবহৃত হয়</string>
+    <string name="perm_microphone_granted">অনুমতি দেওয়া হয়েছে • ভয়েস ইনপুটের জন্য প্রস্তুত</string>
+    <string name="perm_microphone_not_granted">মাইক্রোফোন অনুমতি দিতে ট্যাপ করুন</string>
+    <string name="perm_microphone_allow_btn">মাইক্রোফোন চালু করুন</string>
+    <string name="perm_voice_search_cd">মাইক্রোফোন দিয়ে ভয়েস সার্চ করুন</string>
+    <string name="perm_voice_prompt">এখন বলুন (বাংলা বা English)…</string>
+    <string name="cloud_share_title">ক্লাউড ড্রাইভে শেয়ার ও সংরক্ষণ করুন</string>
+    <string name="cloud_share_subtitle">\"%1$s\" ফাইলটি Google Drive, OneDrive, Dropbox বা অন্য অ্যাপে শেয়ার করুন</string>
+    <string name="cloud_google_drive">Google Drive-এ সংরক্ষণ / শেয়ার করুন</string>
+    <string name="cloud_google_drive_desc">সরাসরি আপনার Google Drive অ্যাকাউন্টে আপলোড করুন</string>
+    <string name="cloud_onedrive">Microsoft OneDrive</string>
+    <string name="cloud_onedrive_desc">OneDrive ক্লাউড স্টোরেজে পাঠান</string>
+    <string name="cloud_dropbox">Dropbox</string>
+    <string name="cloud_dropbox_desc">Dropbox ক্লাউড ফোল্ডারে পাঠান</string>
+    <string name="cloud_saf_save">ক্লাউড বা ইন্টারনাল ফোল্ডারে সেভ করুন (SAF)</string>
+    <string name="cloud_saf_save_desc">সিস্টেম পিকারে Google Drive, OneDrive বা যেকোনো ফোল্ডার বেছে নিন</string>
+    <string name="cloud_other_apps">অন্যান্য অ্যাপে শেয়ার করুন</string>
+    <string name="cloud_other_apps_desc">ইমেইল, হোয়াটসঅ্যাপ, টেলিগ্রাম বা ব্লুটুথে পাঠান</string>
+    <string name="files_loc_cloud_import">Google Drive ও ক্লাউড থেকে খুলুন</string>
+    <string name="files_loc_grant_folder">ইন্টারনাল ফোল্ডার অ্যাক্সেস দিন</string>
+</resources>

@@ -1,0 +1,8 @@
+{
+  "name": "PDF ALL IN ONE Pro+Ai",
+  "description": "Comprehensive native PDF reader and toolkit with fast lazy rendering, pinch zoom, night mode, recent files tracking, and document actions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
